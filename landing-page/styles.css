@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 
+
 }
 
 header{
@@ -52,16 +53,27 @@ nav{
     color: white;
     cursor: pointer;
     font-size: 25px;
+    border: none;
+    box-shadow: 3px 3px 3px 3px black;
  }
  .signup:hover{
     background-color: #2883a9;
  }
 .signup:active{
     background-color: aquamarine;
-    box-shadow: 3px 3px 3px 3px black;
-    transform: translateY(-5px);
+    box-shadow: 0 0 0 0;
+    transform: translateY(5px);
 }
 .img1{
     border-radius: 50px;
     box-shadow: 10px 10px 10px 0px black;
+}
+
+#info{
+    text-align: center;
+}
+#location-container{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
 }
