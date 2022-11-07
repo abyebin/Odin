@@ -14,7 +14,7 @@ nav{
     justify-content: space-around;
     flex: 1;
     background-color: rgb(57, 57, 72);
-    /*position: fixed;*/
+    position: fixed;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ nav{
 .header-body{
     display: flex;
     padding: 30px;
-    
+    padding-top: 56px;
     background-color: rgb(57, 57, 72);
     text-align: left;
 }
@@ -54,7 +54,7 @@ nav{
     cursor: pointer;
     font-size: 25px;
     border: none;
-    box-shadow: 3px 3px 3px 3px black;
+    box-shadow: 10px 4px 16px 0px black;
  }
  .signup:hover{
     background-color: #2883a9;
@@ -86,7 +86,7 @@ nav{
     object-fit: cover;
     border-radius: 10px;
     border: 4px solid skyblue;
-    box-shadow: 10px 10px 10px 0px black;
+    box-shadow: 10px 4px 16px 0px black;
 }
 figcaption{
     width: 300px;
@@ -111,4 +111,40 @@ figcaption{
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
+}
+#signup-container{
+    display: flex;
+    padding: 141px;
+    height: 213px;
+ 
+}
+#signup-content{
+    width: 70%;
+    height: 200px;
+    background: #3b82f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex: 1;
+    border-radius: 5px;
+}
+
+#above-footer{
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#signup2{
+    border: 2px solid white;
+}
+
+#footer{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(57, 57, 72);
 }
