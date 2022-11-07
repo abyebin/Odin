@@ -2,22 +2,18 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 20px;
-    border: 1px solid black;
+
 }
 
 header{
-    display: flex;
     flex-direction: row;
-
-
 }
 nav{
     display: flex;
     justify-content: space-around;
     flex: 1;
     background-color: rgb(57, 57, 72);
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     margin: 0;
     padding: 0;
@@ -32,4 +28,40 @@ nav{
     flex: 1;
     justify-content: space-evenly;
     color: white;
+}
+
+.header-body{
+    display: flex;
+    padding: 30px;
+    
+    background-color: rgb(57, 57, 72);
+    text-align: left;
+}
+ .quote{
+    padding: 20px;
+    color: white;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 40px;
+ }
+ .signup{
+    width: 125px;
+    height: auto;
+    background: #63b0d0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+ }
+ .signup:hover{
+    background-color: #2883a9;
+ }
+.signup:active{
+    background-color: aquamarine;
+    box-shadow: 3px 3px 3px 3px black;
+    transform: translateY(-5px);
+}
+.img1{
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 0px black;
 }
