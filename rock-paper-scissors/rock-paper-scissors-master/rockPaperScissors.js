@@ -17,7 +17,7 @@ function playRound(playerSelection, computerSelection){
     }
     //a est egal a 0 en cas de match nul
     else if(a === 0){
-        return ["match nul", 0];
+        return ["Tie", 0];
     } 
     
 }
@@ -33,14 +33,15 @@ function game(){
 
         let id = choix.indexOf(player);
     
-        //Verification de l'input du joueur
+        
         if(id === -1){
                 console.log('entrez un choix adéquat');
                 
         }
         else{
-            let msg = playRound(playerSelection, computerSelection);
-            console.log(msg[0]);
+            let msg = playRound(playerSelection, computerSelection);[0, 1]
+
+            console.log(msg);
             compteur +=  msg[1];
             i++;
         }        
@@ -53,7 +54,7 @@ function game(){
         return 'Congratulation, You Win!'
     }
     else if(compteur === 0){
-        return 'Match nul!'
+        return 'Tie!'
     }
 }
-
+console.log(game());
