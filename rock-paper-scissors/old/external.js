@@ -11,16 +11,29 @@
 // function playerSelection(){
 //     let n = prompt(" type rock, paper or scissors");
 
+// function playerSelection(){
+//     //let n = prompt(" type rock, paper or scissors");
+//     let n = document.
+//     console.log(n)
+
 //     return n.toLowerCase();
 // }
 
-// console.log(playerSelection());
 
+//     else if(playerselection=="rock" && computerselection=="scissors")
+//         return "win";
+//     else if(playerselection=="scissors" && computerselection=="paper")
+//         return "win";
+//     else if(playerselection=="paper" && computerselection=="rock")
+//         return "win";
+//     else
+//         return "lose";
+// }
+// let playerselection = document.querySelector('.btn');
+// console.log(playerselection);
+// let computerselection = computerSelection();
 
-
-// function playRound(playerselection, computerselection){
-//     if(playerselection == computerselection)
-//         return "Tie";
+//console.log(playRound(playerselection, computerselection));
 
 //     else if(playerselection=="rock" && computerselection=="scissors")
 //         return "You Win";
