@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0%;
+        color: red;
+        border: 1px red solid;
+    }
+    #main{
+        background: grey;
+        width: 100%;
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #sub1,
+    #sub2
+    {
+        background: yellow;
+        width: 500px;
+        padding: 10px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+</style>
+<body>
+    <div id="main">
+        <div id="sub1">
+            <p id="p">hello Click me</p>
+        </div>
+        <div id="sub2"></div>
+    </div>
+    <script>
+        const p = document.getElementById('p');
+        const main = document.getElementById("main");
+        const sub1 = document.getElementById('sub1');
+
+       p.addEventListener('click',changeColor);
+        //p.onClick = function(){sub1.style.background = "blue"};
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+             var color = '#';
+             for (var i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+             }
+            return color;
+            }
+
+        function changeColor(){
+            main.style.background = getRandomColor();
+            if(sub1.style.flex == "0"){
+                sub1.style.flex = 1;
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

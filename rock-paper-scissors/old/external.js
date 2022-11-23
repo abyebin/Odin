@@ -9,11 +9,13 @@ function computerSelection(){
         return "scissors";
 }
 
-function playerSelection(){
-    let n = prompt(" type rock, paper or scissors");
+// function playerSelection(){
+//     //let n = prompt(" type rock, paper or scissors");
+//     let n = document.
+//     console.log(n)
 
-    return n.toLowerCase();
-}
+//     return n.toLowerCase();
+// }
 
 function playRound(playerselection, computerselection){
     if(playerselection == computerselection)
@@ -28,10 +30,11 @@ function playRound(playerselection, computerselection){
     else
         return "lose";
 }
-let playerselection = playerSelection();
+let playerselection = document.querySelector('.btn');
+console.log(playerselection);
 let computerselection = computerSelection();
 
-console.log(playRound(playerselection, computerselection));
+//console.log(playRound(playerselection, computerselection));
 
 function game(){
     let count = 0;
